@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* height: auto;
+    width: auto; */
+    overflow: hidden;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    background-color: #f6f6f6;
+}
+
+.login-div {
+    margin: 20px 20px;
+    width: 430px;
+    height: auto;
+    background-color: #ecf0f3;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+.logo {
+    background: url(./pic/logo\ copy.png);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 2px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+.fields {
+    width: 100%;
+    padding: 55px 5px 5px 5px;
+}
+
+.fields input {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 14px;
+    padding: 15px 10px 15px 5px;
+}
+
+.username,
+.password {
+    margin-bottom: 10px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #ffffff;
+}
+
+.username-msg,
+.password-msg {
+    font-size: 12px;
+    color: #e55050;
+    display: inline-block;
+    margin: 5px 2px 5px 5px;
+    font-weight: 100;
+    height: 25px;
+}
+
+.svg-icon {
+    height: 22px;
+    margin: 0 10px -4px 25px;
+}
+
+.login-button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 55px;
+    background: #0aacbb;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    box-shadow: 3px 3px 8px #b1b1b1b1, -3px -3px 8px #ffffff;
+    transition: all .3s ease-in;
+}
+
+.login-button:hover {
+    background: #47cfa7;
+    font-size: 25px;
+}
+
+.link {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(139, 133, 133);
+    font-size: 15px;
+}
+
+.link a:hover {
+    color: #e55050;
+}
+
+@media (max-width: 768px) {
+    .fields {
+        margin: 2px;
+    }
+}

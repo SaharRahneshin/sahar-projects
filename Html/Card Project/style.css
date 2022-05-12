@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: iranyekan;
+    src: url(./Yekan-Font-master/Yekan.ttf);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(1, 39, 1);
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+}
+
+.logo-name {
+    display: flex;
+}
+
+.log-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: color 0.75s ease;
+}
+
+.log-in:hover {
+    color: rgb(226, 226, 94);
+    font-size: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    padding: 0 10px;
+}
+
+nav a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: opacity 0.75s ease;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: green;
+    border-radius: 7px;
+    opacity: .8;
+}
+
+nav {
+    margin-right: 40px;
+}
+
+body {
+    background-color: rgb(241, 241, 178);
+}
+
+.main {
+    display: flex;
+    margin: 1rem 3rem;
+}
+
+aside {
+    width: 25%;
+    margin-right: 25px;
+}
+
+main {
+    width: 75%;
+    padding: 1rem;
+}
+
+main p {
+    text-align: justify;
+    font-family: iranyekan;
+}
+
+aside,
+main {
+    background: #fff;
+    height: 400px;
+    box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /*     padding: 1rem;
+ */
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    font-family: iranyekan;
+    padding-bottom: 10px;
+}
+
+.logo-aside img {
+    width: 100%;
+    height: calc(100% + 2rem);
+    border-radius: 5px;
+}
+
+
+/*new card project*/
+
+.cards {
+    width: calc(100% - 6rem);
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.1);
+}
+
+.logo1 {
+    width: 80%;
+    height: 110px;
+    display: block;
+    border-radius: 8px;
+    margin: 30px;
+    transition: all .5s ease;
+}
+
+.logo1:hover {
+    transform: scale(1.5);
+}
+
+.card-content {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    height: 50%;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 8px;
+}
+
+.card-content p {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: iranyekan;
+    padding-bottom: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .hamburger-menu i {
+        font-size: 2rem;
+        color: #fff;
+        margin: 5px 0;
+    }
+    .header {
+        padding: 0 1rem;
+    }
+    .log-in {
+        display: none;
+    }
+    .main {
+        flex-direction: column-reverse;
+        margin: 1rem;
+    }
+    aside {
+        width: calc( 100% - .5rem);
+        margin-right: 0;
+        height: 100px;
+    }
+    main {
+        width: calc( 100% - 2rem);
+        height: 500px;
+        margin-bottom: 20px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 80px;
+        width: calc( 100% - 3rem);
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .card-content p {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        font-size: 15px;
+        margin-right: 10PX;
+        padding: 0;
+    }
+    .logo-name {
+        width: 150px;
+    }
+    .log-in {
+        font-size: 12PX;
+    }
+    .log-in:hover {
+        border-radius: 15px;
+        color: rgb(226, 226, 94);
+        font-size: 12px;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        width: calc( 100% - 3rem);
+        height: auto;
+    }
+}
+
+
+/* @media (min-width: 1025px) and (max-width: 1200px) {
+                                                                    .cards {
+                                                                        grid-template-columns: 1fr 1fr;
+                                                                        gap: 70px;
+                                                                    }
+                                                                }*/
